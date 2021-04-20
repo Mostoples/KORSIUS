@@ -1,0 +1,128 @@
+<style>
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+  ion-label{
+    color : white;
+    padding-right : 10px;
+  }
+  h5{
+    color : white;
+    padding-right : 10px;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  li{
+    margin-right : 20px;
+    color : white;
+  }
+
+
+  
+
+</style>
+<style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:3px 20px;word-break:normal;}
+  .tg th{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:3px 20px;word-break:normal;}
+  .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+  </style>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button  [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='position: sticky; z-index : 1; background : url(assets/img/bg2.png); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+  <div style='position: sticky; z-index : 2; background : rgba(0,0,0,0.5); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+        <ion-content  #content [scrollEvents]='true' style='color : white; text-align : justify;'> 
+          <ion-fab>
+            <ion-row>
+              <ion-col class="ion-margin-top" size-md="6" offset-md="3" style='text-align : center;'> 
+                  <ion-label style="font-family : Philosopher; font-weight: bold; font-size: 25px; text-align : center; display : inline;" >Lembar Kerja</ion-label>
+              </ion-col>
+            </ion-row>
+                  <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                      <p><b>Kerjakan soal-soal berikut secara mandiri!</b></p>
+                    <p>
+                      1.	Jika titik A (0, 2), B (6,2), dan C (9,6). Tentukan jarak antara:
+                    </p>
+                   
+                   
+                    <ol type="a">
+                      <li>Titik A dan B</li>
+                      <li>Titik B dan C</li>
+                      
+                    </ol>
+                    <br>
+
+                    <p>
+                      2.	Pada bidang Kartesius diketahui koordinat P (1,2) dan Q (6,7). Jika titik R terletak pada ruas garis PQ sedemikian sehingga PR : QR = 2 : 3, tentukan koordinat titik R dan gambarkan pada bidang Kartesius.
+                    </p>
+                    
+                    <h5 style='text-align : center;'>MARI MENYIMPULKAN</h5>
+                    
+                    <p><b>Jadi apa yang dapat Anda simpulkan dari cara menentukan jarak dua titik pada bidang koordinat Karteisus? Lengkapilah isian rumpang di bawah ini!</b></p>
+                    <p>Misal terdapat titik A(x_1,y_1) dan titik B (x_2,y_2) seperti gambar berikut.</p>
+                    
+                    <div style='width : 100vw; height: 60vw; background-size : cover;'>
+                      <img src="assets/img/matposrak2.png">
+                    </div>
+
+                    <p style='text-align : center;'>Gb. Titik A dan B pada bidang Kartesius</p>
+                    <p>Jarak titik A dan B dapat dilakukan dengan cara berikut.</p>
+                  
+                    <p>Diketahui titik A(x<sub>1</sub>,y<sub>1</sub>) dan titik B (x<sub>2</sub>,y<sub>2</sub>). Diketahui titik A(x<sub>1</sub>,y<sub>1</sub>) dan titik B (x<sub>2</sub>,y<sub>2</sub>). </p>
+                    <p>Dari titik A dibuat garis putus-putus sejajar dengan sumbu x dan dari titik B dibuat garis putus-putus sejajar dengan sumbu y.</p>
+                  
+                    <p>Perpotongan kedua garis itu diberi nama titik c, sehingga terbentuklah segitiga ABC.</p>
+
+                    <p>1.	Berapakah panjang ruas garis AC? </p>
+                    <p>Jawab : .................</p>
+
+                    <p>2.	Berapakah panjang ruas garis BC? </p>
+                    <p>Jawab : .................</p>
+
+                    <p>3.	Apakah ∆ABC merupakan segitiga siku-siku?</p>
+                    <p>Jawab : .................</p>
+
+                    <p>4.	Dalam segitiga siku-siku berlaku dalil Pythagoras, yaitu</p>
+                    <div style='width : 100vw; height: 30vw; background-size : cover;'>
+                      <img src="assets/img/rumusbaru2.png">
+                    </div>
+
+                    <p>Dengan demikian, jarak antara titik A(x<sub>1</sub>,y<sub>1</sub>) dan titik B (x<sub>2</sub>,y<sub>2</sub>) adalah </p>
+                    <div style='width : 100vw; height: 30vw; background-size : cover;'>
+                      <img src="assets/img/rumusbaru3.png">
+                    </div>
+                  </ion-col>
+            </ion-row>
+            
+          </ion-fab>
+        </ion-content>
+</ion-content>

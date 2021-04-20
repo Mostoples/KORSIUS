@@ -1,0 +1,82 @@
+<style>
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+  ion-label{
+    color : white;
+    padding-right : 10px;
+  }
+  h5{
+    color : white;
+    padding-right : 10px;
+  }
+</style>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button  [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='position: sticky; z-index : 1; background : url(assets/img/bg2.png); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+  <div style='position: sticky; z-index : 2; background : rgba(0,0,0,0.5); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+        <ion-content  #content [scrollEvents]='true' style='color : white; text-align : justify;'> 
+          <ion-fab>
+            <ion-row>
+              <ion-col class="ion-margin-top" size-md="6" offset-md="3" style='text-align : center;'> 
+                  <ion-label style="font-family : Philosopher; font-weight: bold; font-size: 25px; text-align : center; display : inline;" >KATA PENGANTAR</ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size-md="6" offset-md="3"> 
+                    <p>
+                      Puji syukur penulis panjatkan ke hadirat Allah SWT karena berkat dan rahmat-Nya penulis dapat menyelesaikan E-modul Sistem Koordinat Kartesius. E-modul ini disusun berdasarkan Kompetensi Dasar (KD) Kurikulum 2013 yang telah disempurnakan untuk memberikan pelajaran yang cukup bagi siswa dalam memahami materi sistem koordinat Kartesius.
+                    </p>
+                    <p>
+                      E-modul ini menyajikan konsep matematika dengan bahasa yang sederhana dan jelas yang dilengkapi kegiatan pembelajaran yang merupakan penerapan dalam Kurikulum 2013. E-modul ini dikemas secara menarik dan praktis serta dapat diakses di mana dan kapan saja oleh siswa. Dalam e-modul ini terdapat gambar, video, dan soal evaluasi yang mendorong siswa untuk memahami konsep-konsep matematika secara mandiri.
+                    </p>
+                   
+                
+                    
+                    <p>
+                      Setelah siswa mempelajari materi dalam e-modul ini, penulis berharap sikap positif yang tinggi terhadap matematika akan tercipta sehingga mutu pendidikan matematika pun akan meningkat. Penulis mengucapkan terima kasih kepada seluruh pihak yang telah membantu proses pembuatan e-modul ini. Penulis juga mengharapkan saran dan kritik yang bersifat membangun demi perbaikan di edisi mendatang.
+                    </p>
+                      <p style='text-align : right'>
+                      Surakarta, 2020
+                    </p>
+                    <br>
+                    <p style='text-align : right'>
+                      Nursita Setyo Ningrum
+                    </p>
+                   
+                    
+                </ion-col>
+            </ion-row>
+            
+            
+          </ion-fab>
+        
+        </ion-content>
+         
+
+  
+  
+  
+</ion-content>

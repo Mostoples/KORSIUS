@@ -1,0 +1,74 @@
+<style>
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+  ion-label{
+    color : white;
+    padding-right : 10px;
+  }
+  h5{
+    color : white;
+    padding-right : 10px;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  
+
+</style>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button  [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='position: sticky; z-index : 1; background : url(assets/img/bg2.png); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+  <div style='position: sticky; z-index : 2; background : rgba(0,0,0,0.5); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+        <ion-content  #content [scrollEvents]='true' style='color : white; text-align : justify;'> 
+          <ion-fab>
+            <ion-row>
+              <ion-col class="ion-margin-top" size-md="6" offset-md="3" style='text-align : center;'> 
+                  <ion-label style="font-family : Philosopher; font-weight: bold; font-size: 25px; text-align : center; display : inline;" >POSISI GARIS TERHADAP SUMBU X & SUMBU Y</ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+    <ion-col size-md="6" offset-md="3"> 
+        
+        <p>
+          Masih ingatkah kalian tentang kedudukan 2 garis?
+        </p>
+        <p>
+          Coba perhatikan video berikut!
+        </p>
+        <iframe width="320" height="240" src="https://www.youtube.com/embed/ZmJjRUnTGGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </ion-col>
+  
+</ion-row>
+            
+            
+</ion-fab>
+
+</ion-content>
+</ion-content>

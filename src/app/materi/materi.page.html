@@ -1,0 +1,113 @@
+<style>
+  @keyframes s1 {
+    from {width : 60vw; height : 19vh;}
+    to {width : 62vw; height : 20vh;}
+  }
+  @keyframes s2 {
+    from {width : 62vw; height : 20vh;}
+    to {width : 60vw; height : 19vh;}
+    
+  }
+
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+
+  .s1 {
+    
+    animation-name: s1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .s2{
+    
+    animation-name: s2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+
+  ion-content{
+  --ion-background-color: transparent;
+}
+</style>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='position: sticky; z-index : 1; background : url(assets/img/bg.jpg); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+  <div style='position: sticky; z-index : 2; background : rgba(0,0,0,0.5); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+        <ion-content  #content [scrollEvents]='true' style='color : white; text-align : justify; z-index : 3; background : transparent'> 
+          <ion-fab>
+              <ion-row>
+                <div style='height : 10vh;'></div>
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-margin-top"> 
+                  <ion-button class='s1' [routerLink]="['/postik']" color='warning' expand='block' style='height : 20vh; margin : auto; width : 60vw;'>
+                    <ion-label>
+                      <div style='margin : auto; background : url(assets/img/point.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                      <div style='margin-top : 2vw; font-size : 3vw' >Topic 1</div>
+                      <div style='margin-top : 2vw;' >POSISI TITIK</div>
+                    </ion-label>
+                  </ion-button>
+                </ion-col>
+    
+                <ion-col class="ion-margin-top"> 
+                  <ion-button class='s2' [routerLink]="['/posris']" color='warning' expand='block' style='height : 20vh; margin : auto; width : 60vw;'>
+                    <ion-label>
+                      <div style='margin : auto; background : url(assets/img/line.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                      <div style='margin-top : 2vw; font-size : 3vw' >Topic 2</div>
+                      <div style='margin-top : 2vw;' >POSISI GARIS</div>
+                    </ion-label>
+                  </ion-button>
+                </ion-col>
+                <ion-col class="ion-margin-top"> 
+                  <ion-button class='s1' [routerLink]="['/posrak']" color='warning' expand='block' style='height : 20vh; margin : auto; width : 60vw;'>
+                    <ion-label>
+                      <div style='margin : auto; background : url(assets/img/point2.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                      <div style='margin-top : 2vw; font-size : 3vw' >Topic 3</div>
+                      <div style='margin-top : 2vw;' >JARAK 2 TITIK</div>
+                    </ion-label>
+                  </ion-button>
+                </ion-col>
+                
+              </ion-row>
+              <ion-row>
+                <div style='height : 10vh;'></div>
+              </ion-row>
+            
+            
+          </ion-fab>
+        
+        </ion-content>
+         
+
+  
+  
+  
+</ion-content>
+
+

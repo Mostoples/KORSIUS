@@ -1,0 +1,83 @@
+<style>
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+  ion-label{
+    color : white;
+    padding-right : 10px;
+  }
+  h5{
+    color : white;
+    padding-right : 10px;
+  }
+</style>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='position: sticky; z-index : 1; background : url(assets/img/bg2.png); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+  <div style='position: sticky; z-index : 2; background : rgba(0,0,0,0.5); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+        <ion-content  #content [scrollEvents]='true' style='color : white; text-align : justify;'> 
+          <ion-fab>
+            <ion-row>
+              <ion-col class="ion-margin-top" size-md="6" offset-md="3" style='text-align : center;'> 
+                  <ion-label style="font-family : Philosopher; font-weight: bold; font-size: 25px; text-align : center; display : inline;" >PENDAHULUAN</ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size-md="6" offset-md="3"> 
+                    <p>
+                      E-modul pembelajaran matematika materi sistem koordinat Kartesius ini dikemas dalam bentuk aplikasi berbasis android. E-modul ini dirancang untuk memfasilitasi siswa dalam belajar mandiri. Sifatnya yang fleksibel menjadikan pembelajaran lebih mudah dilakukan di manapun dan kapanpun. 
+                    </p>
+                    <p>
+                      E-modul ini disusun untuk mencapai tujuan pembelajaran sebagai berikut :
+                    </p>
+                   
+                
+                    
+                    <p>
+                      1.	Siswa dapat menentukan kedudukan titik dalam bidang koordinat Kartesius
+                    
+                    </p>
+                    <p>
+                      2.	Siswa dapat menyelesaikan masalah yang berkaitan dengan kedudukan ririk dalam bidang koordinat Kartesius
+                    </p>
+                   
+                    <p>
+                      Semoga e-modul ini bermanfaat bagi banyak pihak, baik siswa maupun guru sebagai salah satu inovasi media pembelajaran. Selamat berpertualang!
+                    </p>
+                   
+                    
+                </ion-col>
+            </ion-row>
+            
+            
+          </ion-fab>
+        
+        </ion-content>
+         
+
+  
+  
+  
+</ion-content>

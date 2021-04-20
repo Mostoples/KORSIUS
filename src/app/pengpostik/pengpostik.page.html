@@ -1,0 +1,534 @@
+<style>
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+  ion-label{
+    color : white;
+    padding-right : 10px;
+  }
+  h5{
+    color : white;
+    padding-right : 10px;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  
+
+</style>
+
+<style>
+
+  
+  .glow1 {
+ 
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow1 1s ease-in-out infinite alternate;
+    -moz-animation: glow1 1s ease-in-out infinite alternate;
+    animation: glow1 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  </style>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='position: sticky; z-index : 1; background : url(assets/img/bg2.png); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+  <div style='position: sticky; z-index : 2; background : rgba(0,0,0,0.5); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+        <ion-content  #content [scrollEvents]='true' style='color : white; text-align : justify;'> 
+          <ion-fab>
+       <ion-row>
+    <ion-col size-md="6" offset-md="3"> 
+      <div style='width : 100vw; height: 80vw; background-size : cover; '>
+        <img src="assets/img/matpostik0.png">
+      </div>
+        <p>
+          Gb 1. Peta Provinsi Jawa Tengah
+        </p>
+        <p>
+          Coba kamu tentukan koordinat letak kota pada Provinsi Jawa Tengah pada peta di atas. Nah, agar kamu dapat menentukan koordinat letak kota pada peta, kamu harus mempelajarai bab berikut.
+        </p>
+
+       
+        
+        <p>
+          Peta Propinsi Jawa Tengah digambarkan  dengan sistem Koordinat. Pada sistem koordinat, letak suatu tempat dinyatakan dengan kolom dan baris. 
+        </p>
+        <p>
+          Ayo, tentukan letak kota di provinsi Jawa Tengah pada peta di atas! 
+        </p>
+        <p>
+          1.	Kota Tegal terletak pada kolom D baris 7
+        </p>
+        <p>
+          2.	Kota Pekalongan terletak pada ... 
+          
+        </p>
+
+        <div style='width : 100vw; height : auto;'>
+          <div style='width : 100vw; height : 7vw; '>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>KOLOM</span>
+            </div>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>BARIS</span>
+            </div>
+          </div>
+          <div style='width : 100vw; height : 10vw;'>
+            <div style='display : inline-block; float : left; width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(1)' id='inputL1' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+            <div style='display : inline-block; float : right;  width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(1)' id='inputR1' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='salah1' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow1'>Jawaban anda salah!</span>
+          </div>
+          <div id='bener1' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow2'>Jawaban anda benar!</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div style='width : 100vw; height : auto;'>
+            <div id='cek1' style='display : none; width : 50vw; height : 20vw;'>
+                <ion-button  (click)='cek(1)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                    <div style='margin : auto; background : url(assets/img/cek.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                </ion-button>
+            </div>
+            <div id='key1' style='display : none; width : 50vw; height : 20vw;'>
+              
+              <ion-button  (click)='key(1)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                  <div style='margin : auto; background : url(assets/img/keyja.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+              </ion-button>
+    
+            </div>
+            
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='kunci1' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;'>Kolom F Baris 7</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+
+        </div>
+
+        
+
+       
+        <p>
+          3.	Kota Cilacap terletak pada ...
+        </p>
+
+        <div style='width : 100vw; height : auto;'>
+          <div style='width : 100vw; height : 7vw; '>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>KOLOM</span>
+            </div>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>BARIS</span>
+            </div>
+          </div>
+          <div style='width : 100vw; height : 10vw;'>
+            <div style='display : inline-block; float : left; width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(2)' id='inputL2' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+            <div style='display : inline-block; float : right;  width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(2)' id='inputR2' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='salah2' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow2'>Jawaban anda salah!</span>
+          </div>
+          <div id='bener2' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow2'>Jawaban anda benar!</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div style='width : 100vw; height : auto;'>
+            <div id='cek2' style='display : none; width : 50vw; height : 20vw;'>
+                <ion-button  (click)='cek(2)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                    <div style='margin : auto; background : url(assets/img/cek.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                </ion-button>
+            </div>
+            <div id='key2' style='display : none; width : 50vw; height : 20vw;'>
+              
+              <ion-button  (click)='key(2)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                  <div style='margin : auto; background : url(assets/img/keyja.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+              </ion-button>
+    
+            </div>
+            
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='kunci2' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;'>Kolom D Baris 4</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+
+        </div>
+
+
+        <p>
+          4.	Kota Purwokerto terletak pada ... </p>
+
+        <div style='width : 100vw; height : auto;'>
+          <div style='width : 100vw; height : 7vw; '>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>KOLOM</span>
+            </div>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>BARIS</span>
+            </div>
+          </div>
+          <div style='width : 100vw; height : 10vw;'>
+            <div style='display : inline-block; float : left; width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(3)' id='inputL3' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+            <div style='display : inline-block; float : right;  width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(3)' id='inputR3' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='salah3' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow3'>Jawaban anda salah!</span>
+          </div>
+          <div id='bener3' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow3'>Jawaban anda benar!</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div style='width : 100vw; height : auto;'>
+            <div id='cek3' style='display : none; width : 50vw; height : 20vw;'>
+                <ion-button  (click)='cek(3)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                    <div style='margin : auto; background : url(assets/img/cek.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                </ion-button>
+            </div>
+            <div id='key3' style='display : none; width : 50vw; height : 20vw;'>
+              
+              <ion-button  (click)='key(3)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                  <div style='margin : auto; background : url(assets/img/keyja.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+              </ion-button>
+    
+            </div>
+            
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='kunci3' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;'>Kolom E Baris 5</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+
+        </div>
+
+        <p>
+          5.	Kota Magelang terletak pada ...   </p>
+
+        <div style='width : 100vw; height : auto;'>
+          <div style='width : 100vw; height : 7vw; '>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>KOLOM</span>
+            </div>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>BARIS</span>
+            </div>
+          </div>
+          <div style='width : 100vw; height : 10vw;'>
+            <div style='display : inline-block; float : left; width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(4)' id='inputL4' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+            <div style='display : inline-block; float : right;  width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(4)' id='inputR4' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='salah4' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow4'>Jawaban anda salah!</span>
+          </div>
+          <div id='bener4' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow4'>Jawaban anda benar!</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div style='width : 100vw; height : auto;'>
+            <div id='cek4' style='display : none; width : 50vw; height : 20vw;'>
+                <ion-button  (click)='cek(4)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                    <div style='margin : auto; background : url(assets/img/cek.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                </ion-button>
+            </div>
+            <div id='key4' style='display : none; width : 50vw; height : 20vw;'>
+              
+              <ion-button  (click)='key(4)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                  <div style='margin : auto; background : url(assets/img/keyja.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+              </ion-button>
+    
+            </div>
+            
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='kunci4' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;'>Kolom I Baris 5</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+
+        </div>
+
+        <p>
+          6.	Kota Semarang terletak pada ... </p>
+
+        <div style='width : 100vw; height : auto;'>
+          <div style='width : 100vw; height : 7vw; '>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>KOLOM</span>
+            </div>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>BARIS</span>
+            </div>
+          </div>
+          <div style='width : 100vw; height : 10vw;'>
+            <div style='display : inline-block; float : left; width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(5)' id='inputL5' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+            <div style='display : inline-block; float : right;  width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(5)' id='inputR5' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='salah5' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow5'>Jawaban anda salah!</span>
+          </div>
+          <div id='bener5' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow5'>Jawaban anda benar!</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div style='width : 100vw; height : auto;'>
+            <div id='cek5' style='display : none; width : 50vw; height : 20vw;'>
+                <ion-button  (click)='cek(5)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                    <div style='margin : auto; background : url(assets/img/cek.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                </ion-button>
+            </div>
+            <div id='key5' style='display : none; width : 50vw; height : 20vw;'>
+              
+              <ion-button  (click)='key(5)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                  <div style='margin : auto; background : url(assets/img/keyja.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+              </ion-button>
+    
+            </div>
+            
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='kunci5' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;'>Kolom J Baris 7</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+
+        </div>
+
+        <p>
+          7.	Kota Salatiga terletak pada ...  </p>
+
+        <div style='width : 100vw; height : auto;'>
+          <div style='width : 100vw; height : 7vw; '>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>KOLOM</span>
+            </div>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>BARIS</span>
+            </div>
+          </div>
+          <div style='width : 100vw; height : 10vw;'>
+            <div style='display : inline-block; float : left; width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(6)' id='inputL6' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+            <div style='display : inline-block; float : right;  width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(6)' id='inputR6' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='salah6' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow6'>Jawaban anda salah!</span>
+          </div>
+          <div id='bener6' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow6'>Jawaban anda benar!</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div style='width : 100vw; height : auto;'>
+            <div id='cek6' style='display : none; width : 50vw; height : 20vw;'>
+                <ion-button  (click)='cek(6)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                    <div style='margin : auto; background : url(assets/img/cek.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                </ion-button>
+            </div>
+            <div id='key6' style='display : none; width : 50vw; height : 20vw;'>
+              
+              <ion-button  (click)='key(6)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                  <div style='margin : auto; background : url(assets/img/keyja.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+              </ion-button>
+    
+            </div>
+            
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='kunci6' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;'>Kolom J Baris 6</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+
+        </div>
+
+
+        <p>
+          8.	Kota Surakarta terletak pada ... </p>
+
+        <div style='width : 100vw; height : auto;'>
+          <div style='width : 100vw; height : 7vw; '>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>KOLOM</span>
+            </div>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>BARIS</span>
+            </div>
+          </div>
+          <div style='width : 100vw; height : 10vw;'>
+            <div style='display : inline-block; float : left; width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(7)' id='inputL7' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+            <div style='display : inline-block; float : right;  width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(7)' id='inputR7' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='salah7' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow7'>Jawaban anda salah!</span>
+          </div>
+          <div id='bener7' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow7'>Jawaban anda benar!</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div style='width : 100vw; height : auto;'>
+            <div id='cek7' style='display : none; width : 50vw; height : 20vw;'>
+                <ion-button  (click)='cek(7)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                    <div style='margin : auto; background : url(assets/img/cek.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                </ion-button>
+            </div>
+            <div id='key7' style='display : none; width : 50vw; height : 20vw;'>
+              
+              <ion-button  (click)='key(7)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                  <div style='margin : auto; background : url(assets/img/keyja.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+              </ion-button>
+    
+            </div>
+            
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='kunci7' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;'>Kolom O Baris 6</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+
+        </div>
+
+        <p>
+          9.	Kota Kudus terletak pada kolom ...  </p>
+
+        <div style='width : 100vw; height : auto;'>
+          <div style='width : 100vw; height : 7vw; '>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>KOLOM</span>
+            </div>
+            <div id='' style='display : inline-block; width : 50vw; height : 7vw; text-align : center; color : white; font-weight: bold;'>
+              <span>BARIS</span>
+            </div>
+          </div>
+          <div style='width : 100vw; height : 10vw;'>
+            <div style='display : inline-block; float : left; width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(8)' id='inputL8' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+            <div style='display : inline-block; float : right;  width : 50vw; height : 10vw; text-align : center;'>
+              <input (change)='show(8)' id='inputR8' style='font-weight : bold; text-align : center; width : 30vw; font-size : 7vw; color : purple;' type="text" >
+            </div>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='salah8' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow8'>Jawaban anda salah!</span>
+          </div>
+          <div id='bener8' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;' class='glow8'>Jawaban anda benar!</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div style='width : 100vw; height : auto;'>
+            <div id='cek8' style='display : none; width : 50vw; height : 20vw;'>
+                <ion-button  (click)='cek(8)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                    <div style='margin : auto; background : url(assets/img/cek.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+                </ion-button>
+            </div>
+            <div id='key8' style='display : none; width : 50vw; height : 20vw;'>
+              
+              <ion-button  (click)='key(8)' id='exitButton' color='warning' expand='block' style='height : 20vw; margin : auto; width : 30vw;'>
+                  <div style='margin : auto; background : url(assets/img/keyja.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+              </ion-button>
+    
+            </div>
+            
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+          <div id='kunci8' style='width : 100vw; height : 7vw; text-align : center; display : none;'>
+            <span style='color : white; font-weight : bold; font-size : 5vw;'>Kolom L Baris 8</span>
+          </div>
+          <div style='width : 100vw; height : 3vw;'></div>
+
+        </div>
+
+        <p>
+          Keterangan :
+        </p>
+        <p>
+          Kolom adalah garis yang arahnya tegak (vertikal)
+        </p>
+        <p>
+          Baris adalah garis yang arahnya mendatar (horisontal) 
+        </p>
+
+        <br>
+
+        
+
+        </ion-col>
+  
+</ion-row>
+            
+            
+</ion-fab>
+
+</ion-content>
+</ion-content>

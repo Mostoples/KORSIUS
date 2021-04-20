@@ -1,0 +1,193 @@
+<style>
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+  ion-label{
+    color : white;
+  }
+  h5{
+    color : white;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button  [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='position: sticky; z-index : 1; background : url(assets/img/bg2.png); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+  <div style='position: sticky; z-index : 2; background : rgba(0,0,0,0.5); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+        <ion-content  #content [scrollEvents]='true' style='color : white; text-align : justify;'> 
+          <ion-fab>
+            <ion-row>
+              <ion-col class="ion-margin-top" size-md="6" offset-md="3" style='text-align : center;'> 
+                  <ion-label style="color : yellow; font-family : Philosopher; font-weight: bold; font-size: 25px; text-align : center; display : inline;" >Jarak dua titik pada bidang Kartesius</ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size-md="6" offset-md="3"> 
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-margin-top" size-md="6" offset-md="3"> 
+                    <ion-label style="font-family : Philosopher; font-weight: bold; font-size: 23px; text-align : center; color : yellow" >A. Jarak Dua Titik pada Bidang Kartesius</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+             
+                  <p>
+                    Perhatikan gambar berikut!
+                  </p>
+                  <div style='width : 100vw; height: 60vw; background-size : cover;'>
+                      <img src="assets/img/matposrak1.png">
+                    </div>
+                    <p style='text-align : center;'>
+                      Gb 1. Jarak dua titik pada bidang Kartesius
+                    </p>
+                    <p>
+                      Berdasarkan gambar diatas, 
+                    </p>
+                    <p>
+                      Nilai x pada titik P adalah 3.
+                    </p>
+                    <p>
+                      Nilai y pada titik P adalah 4.
+                    </p>
+                    <p>
+                      Sekarang, akan kita cari jarak titik asal O(0,0) ke titik P(3,4), misalkan d. Besar d ditentukan dengan cara berikut:
+                    </p>
+                    <div style='width : 100vw; height: 12vw; background-size : cover;'>
+                      <img src="assets/img/rumus1.png">
+                    </div>
+                    <p>
+                      Sehingga, secara umum dapat dikatakan bahwa jarak titik P(x,y) dari titik asal dirumuskan sebagai berikut
+                    </p>
+                    <div style='width : 100vw; height: 12vw; background-size : cover;'>
+                      <img src="assets/img/rumus2.png">
+                    </div>
+                    <p>
+                      Lalu bagaimana rumus jarak antara dua titik misal A(x<sub>1</sub>,y<sub>1</sub>) dan B (x<sub>2</sub>,y<sub>2</sub>) dalam bidang Kartesius?
+                    </p>
+                    <p>
+                      Perhatikan gambar berikut.
+                    </p>
+                    <div style='width : 100vw; height: 60vw; background-size : cover;'>
+                      <img src="assets/img/matposrak2.png">
+                    </div>
+                    <p style='text-align : center;'>
+                      Gb 2. Titik A dan B pada bidang Kartesius
+                    </p>
+                    <p>
+                     Jarak antar titik A(x<sub>1</sub>,y<sub>1</sub>) dan B (x<sub>2</sub>,y<sub>2</sub>) adalah
+                    </p>
+                    <div style='width : 100vw; height: 60vw; background-size : cover;'>
+                      <img src="assets/img/rumusbaru.png">
+                    </div>
+                    
+                    
+                 
+                    
+                    <p>
+                      <b>Contoh soal :</b>
+                    </p>
+                    <p>
+                      Diketahui letak titik-titik P,Q,R pada bidang Kartesius berturut-turut adalah (2,1), (6,1), dan (6,4). Tentukan jarak PQ dan PR!
+                    </p>
+                    <p>
+                      <u>Pembahasan</u>
+                    </p>
+                    <div style='width : 100vw; height: 25vw; background-size : cover;'>
+                      <img src="assets/img/rumus5.png">
+                    </div>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col class="ion-margin-top" size-md="6" offset-md="3"> 
+                      <ion-label style="font-family : Philosopher; font-weight: bold; font-size: 23px; text-align : center; color : yellow;" > B. Koordinat Sembarang Titik pada suatu Ruas Garis </ion-label>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    
+                    <p>
+                      Setelah kamu mempelajari jarak antar dua titik, sekarang kamu akan mempelajari bagaimana menentukan koordinat sembarang titik pada suatu ruas garis.
+                    </p>
+                    <p>
+                      Perhatikan gambar berikut.
+                    </p>
+                    <div style='width : 100vw; height: 30vw; background-size : cover;'>
+                      <img src="assets/img/matposrak4.png">
+                    </div>
+                    <p style='text-align : center'>
+                      Gb 3. Koordinat sembarang titik pada suatu ruas garis
+                    </p>
+                    <p>
+                      Misalkan pada bidang Kartesius terdapat titik titik A(x<sub>1</sub>,y<sub>1</sub>),B (x<sub>2</sub>,y<sub>2</sub>), dan C (x<sub>c</sub>,y<sub>c</sub>) yang berada pada ruas garis AB sedemikian sehingga AC : CB = m : n
+                    </p>
+                   
+                    <p>
+                      Koordinat titik C (x<sub>c</sub>,y<sub>c</sub>) ditentukan dengan rumus
+                    </p>
+                    <div style='width : 100vw; height: 28vw; background-size : cover;'>
+                      <img src="assets/img/matposrak5.png">
+                    </div>
+                    <p>
+                      Contoh soal :
+                    </p>
+                    <p>
+                      Diketahui C (2,1) dan D (10,7). Jika E terletak pada ruas garis CD sedemikan sehingga CE : ED = 3 : 1. Tentukan koordinat titik E.
+                    </p>
+                    <p>
+                      <u>Pembahasan : </u>
+                    </p>
+                    <p>
+                      Misalkan koordinat E(x<sub>E</sub>,y<sub>E</sub>) maka 
+                    </p>
+                 
+                    <div style='width : 100vw; height: 60vw; background-size : cover;'>
+                      <img src="assets/img/matposrak6.png">
+                    </div>
+                    <p>
+                      Jadi koordinat E (8,  22/4)
+                    </p>
+                    
+                    
+                   
+                    
+                </ion-col>
+            </ion-row>
+            
+            
+          </ion-fab>
+        
+        </ion-content>
+         
+
+  
+  
+  
+</ion-content>

@@ -1,0 +1,98 @@
+
+<style>
+  @keyframes s1 {
+    from {width : 60vw; height : 19vh;}
+    to {width : 62vw; height : 20vh;}
+  }
+  @keyframes s2 {
+    from {width : 62vw; height : 20vh;}
+    to {width : 60vw; height : 19vh;}
+    
+  }
+
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+
+  .s1 {
+    
+    animation-name: s1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .s2{
+    
+    animation-name: s2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+</style>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='background : url(assets/img/bg.jpg); background-size : cover; position : absolute; width : 100vw; height : 100vh;'>
+    <ion-row>
+      <ion-col class="ion-margin-top"> 
+        <ion-button  class='s1' [routerLink]="['/pengpostik']" color='warning' expand='block' style='height : 20vh; margin : auto; width : 60vw;'>
+          <ion-label>
+            <div style='margin : auto; background : url(assets/img/persepsi.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+            
+            <div style='margin-top : 2vw;' >Pengenalan</div>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col class="ion-margin-top"> 
+        <ion-button  class='s1' [routerLink]="['/matpostik']" color='warning' expand='block' style='height : 20vh; margin : auto; width : 60vw;'>
+          <ion-label>
+            <div style='margin : auto; background : url(assets/img/book.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+       
+            <div style='margin-top : 2vw;' >Materi</div>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col class="ion-margin-top"> 
+        <ion-button  class='s2' [routerLink]="['/lempostik']" color='warning' expand='block' style='height : 20vh; margin : auto; width : 60vw;'>
+          <ion-label>
+            <div style='margin : auto; background : url(assets/img/lembarkerja.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+     
+            <div style='margin-top : 2vw;' >Lembar Kerja</div>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+      <ion-col class="ion-margin-top"> 
+        <ion-button  class='s2' [routerLink]="['/latpostik']" color='warning' expand='block' style='height : 20vh; margin : auto; width : 60vw;'>
+          <ion-label>
+            <div style='margin : auto; background : url(assets/img/test.png); width : 20vw; height : 20vw; background-size : cover;'></div>
+          
+            <div style='margin-top : 2vw;' >Latihan Soal</div>
+          </ion-label>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+ 
+</ion-content>

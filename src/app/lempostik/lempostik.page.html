@@ -1,0 +1,299 @@
+<style>
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+  ion-label{
+    color : white;
+    padding-right : 10px;
+  }
+  h5{
+    color : white;
+    padding-right : 10px;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  li{
+    margin-right : 20px;
+    color : white;
+  }
+
+
+  
+
+</style>
+<style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:7px 10px;word-break:normal;}
+  .tg th{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:7px 10px;word-break:normal;}
+  .tg .tg-0pky{border-color:inherit;text-align:center;vertical-align:middle}
+  .tg .tg-0lax{text-align:center;vertical-align:middle}
+  </style>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='position: sticky; z-index : 1; background : url(assets/img/bg2.png); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+  <div style='position: sticky; z-index : 2; background : rgba(0,0,0,0.5); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+        <ion-content  #content [scrollEvents]='true' style='color : white; text-align : justify;'> 
+          <ion-fab>
+            <ion-row>
+              <ion-col class="ion-margin-top" size-md="6" offset-md="3" style='text-align : center;'> 
+                  <ion-label style="font-family : Philosopher; font-weight: bold; font-size: 25px; text-align : center; display : inline;" >Lembar Kerja</ion-label>
+              </ion-col>
+            </ion-row>
+                  <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                    <p>
+                      <b>Kerjakan soal-soal berikut secara mandiri!</b>
+                    </p>
+                    <p>
+                      1.	Gambarkan titik-titik koordinat berikut pada bidang Kartesius.
+                    </p>
+                    <p>
+                      P (0,4)
+                    </p>
+                    <p>
+                      Q (-6,2)
+                    </p>
+                    <p>
+                      R (6,-2)
+                    </p>
+                    <p>
+                      S (-6,-6)
+                    </p>
+                    <p>
+                      T (-2,0)
+                    </p>
+                    <br>
+
+                    <p>
+                      2.	Perhatikan gambar berikut.
+                    </p>
+                    <div style='width : 100vw; height: 90vw; background-size : cover; '>
+                      <img src="assets/img/lembarkerja1.png">
+                    </div>
+                    <p>
+                      Gambar di atas menunjukkan jalur balap sepeda yang akan dilalui peserta lomba. Jalur tersebut digambarkan dalam bidang koordinat Kartesius, mulai dari titik A dan berakhir di titik G.
+                    </p>
+                    <p>
+                      Isilah tabel berikut untuk menentukan koordinat titik-titik yang akan dilalui oleh pembalap dan terletak pada kuadran ke berapa.
+                    </p>
+                    <table style='margin : auto; color : white; border-color:white;' class="tg">
+                      <thead style='color : white; border-color:white;' >
+                        <tr style='color : white; border-color:white;' >
+                          <th style='color : white; border-color:white;' class="tg-0pky" rowspan="2">Titik</th>
+                          <th style='color : white; border-color:white;' class="tg-0pky" colspan="2">Jarak Titik Terhadap</th>
+                          <th style='color : white; border-color:white;' class="tg-0pky" rowspan="2">Kuadran</th>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0pky">Sumbu X</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">Sumbu Y</td>
+                        </tr>
+                      </thead>
+                      <tbody style='color : white; border-color:white;'>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0pky">A (-7, 7)</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">7 satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">7 satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">II</td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0pky">B (-3, 3)</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">3 satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">... satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">-</td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0pky">C (0, ... )</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">2 satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">0 satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">.....</td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0pky">D (..., 5)</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">5 satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">... satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">...</td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0pky">E (..., ...)</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">0 satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">... satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">-</td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0pky">F ( ..., -5)</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">5 satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">... satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">IV</td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0pky">G ( ..., ... )</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">... satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">... satuan</td>
+                          <td style='color : white; border-color:white;' class="tg-0pky">...</td>
+                        </tr>
+                      </tbody>
+                      </table>
+                      <p>
+                        3.	Perhatikan gambar berikut.
+                      </p>
+                      <div style='width : 100vw; height: 64vw; background-size : cover; '>
+                        <img src="assets/img/lembarkerja2.png">
+                      </div>
+                      <p>
+                        Keterangan : 
+                      </p>
+                      <p>
+                        Titik asal (0,0) = Pintu masuk 
+                      </p>
+                      <p>
+                        A = Roller coaster
+                      </p>
+                      <p>
+                        B = Rumah fauna
+                      </p>
+                      <p>
+                        C = Taman air mancur
+                      </p>
+                      <p>
+                        D = Flower park 
+                      </p>
+                      <p>
+                        E = Tempat parkir 
+                      </p>
+                      <p>
+                        F = Pintu keluar 
+                      </p>
+                   
+                   
+                   
+                   
+                    <br>
+
+                    <p>
+                      Lengkapilah tabel di bawah ini.
+                    </p>
+                    <table class="tg" style='color : white; border-color:white;'>
+                      <thead style='color : white; border-color:white;'>
+                        <tr style='color : white; border-color:white;'>
+                          <th style='color : white; border-color:white;' class="tg-0lax" colspan="2"><b>Tempat</b></th>
+                          <th style='color : white; border-color:white;' class="tg-0lax" colspan="2"><b>Posisi Tempat terhadap</b></th>
+                        </tr>
+                      </thead >
+                      <tbody style='color : white; border-color:white;'>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><b>Objek</b></td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><b>Koordinat</b></td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><b>Pintu Masuk (0,0)</b></td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><b>Pintu Keluar (2,-3)</b></td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0lax">Roller coaster</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">(7, 8)</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu masuk </p>
+                          <p>7 satuan ke kanan</p>
+                        <p>8 satuan ke atas</p></td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu keluar </p>
+                          <p>5 satuan ke kanan</p>
+                        <p>11 satuan ke atas</p></td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0lax">Rumah fauna</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">(…, 4)</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu masuk </p>
+                          <p>9 satuan ke .......</p>
+                        <p>... satuan ke atas</p></td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu keluar </p>
+                          <p>11 satuan ke kiri</p>
+                        <p>... satuan ke atas</p></td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0lax">Taman air mancur</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">(..., 0)</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu masuk </p><p>.... satuan ke kanan</p></td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu keluar </p><p>... satuan ke ...</p><p>... satuan ke atas</p></td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0lax">Flower park</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">(-5, …)</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu masuk </p><p>... satuan ke kiri</p><p>3 satuan ke ..........</p></td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu keluar </p><p>7 satuan ke ...</p></td>
+                        </tr>
+                        <tr style='color : white; border-color:white;'>
+                          <td style='color : white; border-color:white;' class="tg-0lax">Tempat parkir </td>
+                          <td style='color : white; border-color:white;' class="tg-0lax">(..., ...)</td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu masuk </p><p>... satuan ke ....</p><p>... satuan ke ....</p></td>
+                          <td style='color : white; border-color:white;' class="tg-0lax"><p>Dari pintu keluar </p><p>... satuan ke ....</p><p>.... satuan ke ....</p></td>
+                        </tr>
+                      </tbody>
+                      </table>
+
+                    <p>
+                      a.	Berdasarkan tabel di atas, koordinat roller coaster, rumah fauna, taman air mancur, flower park, dan tempat parkir terhadap pintu masuk adalah sebagai berikut.
+                    </p>
+                    <ol type='1)'>
+                      <li>Koordinat roller coaster terhadap pintu masuk adalah (7, 8 ).</li>
+                      <li>Koordinat rumah fauna terhadap pintu masuk adalah (-9, ...).</li>
+                      <li>Koordinat taman air mancur terhadap pintu masuk adalah (..., 0).</li>
+                      <li>Koordinat flower park terhadap pintu masuk adalah (..., ....).</li>
+                      <li>Koordinat tempat parkir terhadap pintu masuk adalah (..., ....).</li>
+                    </ol>
+
+                    <p>
+                      b.	Berdasarkan tabel di atas, koordinat roller coaster, rumah fauna, taman air mancur, flower park, dan tempat parkir terhadap pintu keluar adalah sebagai berikut.
+                    </p>
+                    <ol type='1)'>
+                      <li>Koordinat roller coaster terhadap pintu keluar adalah (5, 11).</li>
+                      <li>Koordinat rumah fauna terhadap pintu keluar adalah (-11, ...).</li>
+                      <li>Koordinat taman air mancur terhadap pintu keluar adalah (..., 3).</li>
+                      <li>Koordinat flower park terhadap pintu keluar adalah (..., 0).</li>
+                      <li>Koordinat tempat parkir terhadap pintu keluar adalah (..., ....).</li>
+                    </ol>
+
+                   
+                    <h5 style='text-align : center; color : white;'>MARI MENYIMPULKAN</h5>
+                    <p><b>Jadi apa yang dapat Anda simpulkan dari cara menentukan titik pada bidang koordinat Karteisus? Lengkapilah isian rumpang di bawah ini!</b></p>
+                    <p>1.	Menentukan posisi titik terhadap sumbu x dan sumbu y adalah dengan cara sebagai berikut:</p>
+                    <ol type='a'>
+                      <li>a.	Posisi titik terhadap sumbu x sama artinya dengan jarak titik terhadap sumbu x. Jarak tersebut dapat dihitung dengan cara menghitung satu satuan dimulai dari ................... hingga sumbu ... .</li>
+                      <li>b.	Posisi titik terhadap sumbu y sama artinya dengan jarak titik terhadap sumbu y. Jarak tersebut dapat dihitung dengan cara menghitung satu satuan dimulai dari ................... hingga sumbu ... .</li>
+                    </ol>
+                    <p>2.	Menentukan titik koordinat pada bidang koordinat Kartesius adalah dengan cara sebagai berikut:</p>
+                    <ol type='a'>
+                      <li>a.	Buat garis pertolongan sejajar sumbu y  sehingga memotong sumbu ... . Hasil perpotongan tersebut merupakan nilai dari ... yang disebut absis atau jarak terhadap sumbu ... .</li>
+                      <li>b.	Buat garis pertolongan sejajar sumbu x  sehingga memotong sumbu ... . Hasil perpotongan tersebut merupakan nilai dari ... yang disebut ordinat atau jarak terhadap sumbu ... .</li>
+                    </ol>
+                    <p>3.	Posisi titik pada koordinat kartesius ditulis dalam bentuk pasangan bilangan (..., ...) dimana x disebut absis dan y disebut ordinat. </p>
+                  </ion-col>
+            </ion-row>
+            
+          </ion-fab>
+        </ion-content>
+</ion-content>

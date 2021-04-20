@@ -1,0 +1,254 @@
+<style>
+  p{
+    color : white;
+    padding-right : 10px;
+  }
+  ion-label{
+    color : white;
+    padding-right : 10px;
+  }
+
+  h5{
+    color : white;
+    padding-right : 10px;
+  }
+  label{
+    color : white;
+    margin-left : 4vw;
+   
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  li{
+    color : white;
+  }
+  
+  input {
+    margin-bottom : 4vw;
+    margin-left : 2vw;
+  }
+
+  input[type='radio'] {
+    transform: scale(2);
+}
+</style>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button class='s1' [routerLink]="['/cover']" color='warning' expand='block' >
+            <ion-icon name='home'></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-toolbar>
+</ion-footer>
+
+<ion-content style='color : white; text-align : justify;'>
+  <div style='position: sticky; z-index : 1; background : url(assets/img/bg2.png); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+  <div style='position: sticky; z-index : 2; background : rgba(0,0,0,0.5); background-size : cover; position : absolute; width : 100vw; height : 100vh;'></div>
+        <ion-content  #content [scrollEvents]='true' style='color : white; text-align : justify;'> 
+          <ion-fab>
+            <ion-row>
+              <ion-col class="ion-margin-top" size-md="6" offset-md="3" style='text-align : center;'> 
+                  <ion-label style="font-family : Philosopher; font-weight: bold; font-size: 25px; text-align : center; display : inline;" >Latihan Soal Posisi Jarak Titik</ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size-md="6" offset-md="3"> 
+                  <p><b>Pilihlah salah satu jawaban yg paling tepat!</b></p>
+                    <div style='width : 100vw; height: 70vw; background-size : cover;'>
+                      <img src="assets/img/latposrak1.png">
+                    </div>
+                    
+                    <!--  -------------------------------------------------------------------------------------------------------   -->
+                    <div id='soal1' style='background : rgba(0,0,0,0)'>
+                      <p>
+                        1.	Jarak titik D dengan titik asal adalah ... .
+                      </p>
+                      <div id='pilihana1' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal1" value="a">
+                        <label style='color : white' for="a">a.	3</label><br>
+                      </div>
+                      <div id='pilihanb1' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal1" value="b">
+                        <label for="b">b.	4</label><br>
+                      </div>
+                      <div class='benar' id='pilihanc1' style='display : flex; flex-wrap : wrap; background :rgba(0,0,0,0)'>
+                        <input type="radio" name="soal1" id='benar1' value="c">
+                        <label for="c">c.	5</label><br>
+                      </div>
+                      <div id='pilihand1' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal1" value="d">
+                        <label for="d">d.	6</label><br>
+                      </div>
+
+                      <div id='danger1' style='display : none; background : rgba(255,0,0,0.8); width : 100%; color : white; font-weight: bold; text-align : center;'><span>Salah</span></div>
+                    </div>
+                    <!--  -------------------------------------------------------------------------------------------------------   -->
+                     <!--  -------------------------------------------------------------------------------------------------------   -->
+                     <div id='soal2' style='background : rgba(0,0,0,0)'>
+                      <p>
+                        2.	Jarak titik A dan titik B adalah ... .
+                      </p>
+                      <div id='pilihana2' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal2" value="a">
+                        <label for="a">a. √144</label><br>
+                      </div>
+                      <div class='benar' id='pilihanb2' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal2" id='benar2' value="b">
+                        <label for="b">b.	√145</label><br>
+                      </div>
+                      <div id='pilihanc2' style='display : flex; flex-wrap : wrap; background :rgba(0,0,0,0)'>
+                        <input type="radio" name="soal2" value="c">
+                        <label for="c">c.	√146</label><br>
+                      </div>
+                      <div id='pilihand2' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal2" value="d">
+                        <label for="d">d.	√147</label><br>
+                      </div>
+                      <div id='danger2' style='display : none; background : rgba(255,0,0,0.8); width : 100%; color : white; font-weight: bold; text-align : center;'><span>Salah</span></div>
+                    </div>
+                    <!--  -------------------------------------------------------------------------------------------------------   -->
+                     <!--  -------------------------------------------------------------------------------------------------------   -->
+                     <div id='soal3' style='background : rgba(0,0,0,0)'>
+                      <p>
+                        3.	Pada suatu garis, titik B berjarak 1 satuan ke kanan A(0,0), titik C berjarak 2 satuan ke kiri dari titik A, titik D berjarak 3 satuan ke kanan dari titik B, dan titik E berjarak 12 satuan ke kiri dari titik D. Jarak dari titik D ke titik E adalah ... .
+                      </p>
+                      <div id='pilihana3' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal3" value="a">
+                        <label for="a">a.	9</label><br>
+                      </div>
+                      <div id='pilihanb3' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal3" value="b">
+                        <label for="b">b.	10</label><br>
+                      </div>
+                      <div id='pilihanc3' style='display : flex; flex-wrap : wrap; background :rgba(0,0,0,0)'>
+                        <input type="radio" name="soal3" value="c">
+                        <label for="c">c.	11</label><br>
+                      </div>
+                      <div class='benar' id='pilihand3' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal3" id='benar3' value="d">
+                        <label for="d">d.	12</label><br>  
+                      </div>
+
+                      <div id='danger3' style='display : none; background : rgba(255,0,0,0.8); width : 100%; color : white; font-weight: bold; text-align : center;'><span>Salah</span></div>
+                    </div>
+                    <!--  -------------------------------------------------------------------------------------------------------   -->
+                     <!--  -------------------------------------------------------------------------------------------------------   -->
+                    <div id='soal4' style='background : rgba(0,0,0,0)'>
+                      <p>
+                        4.	Diketahui koordinat titik P(-2,3) dan Q(4,3). Jika titik R terletak pada ruas garis AB sedemikian sehingga PR : RB = 4 : 2, maka koordinat titik R adalah .. .
+                      </p>
+                      <div id='pilihana4' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal4" value="a">
+                        <label for="a">a.	(0,3)</label><br>
+                      </div>
+                      <div id='pilihanb4' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal4" value="b">
+                        <label for="b">b.	(-2,3)</label><br>
+                      </div>
+                      <div class='benar' id='pilihanc4' style='display : flex; flex-wrap : wrap; background :rgba(0,0,0,0)'>
+                        <input type="radio" name="soal4" id='benar4' value="c">
+                        <label for="c">c.	(2,3)</label><br>
+                      </div>
+                      <div id='pilihand4' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal4" value="d">
+                        <label for="d">d.	(3,0)</label><br>  
+                      </div>
+
+                      <div id='danger4' style='display : none; background : rgba(255,0,0,0.8); width : 100%; color : white; font-weight: bold; text-align : center;'><span>Salah</span></div>
+                    </div>
+                    <!--  -------------------------------------------------------------------------------------------------------   -->
+                     <!--  -------------------------------------------------------------------------------------------------------   -->
+                     <div id='soal5' style='background : rgba(0,0,0,0)'>
+                      <p>
+                        5. Perhatikan gambar berikut
+                      </p>
+                      <div style='width : 100vw; height: 50vw; background-size : cover;'>
+                        <img src="assets/img/latposrak2.png">
+                      </div>
+                      <p>
+                        Andi, Budi, dan Candra sedang bermain bola. Jarak Andi dan Budi 4 meter sedangkan Andi dan Candra berjarak 3 meter.  Jika ketiga orang tersebut membentuk formasi segitiga siku-siku, maka jarak Budi dan Candra adalah ... meter.
+                      </p>
+                      <div id='pilihana5' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal5" value="a">
+                        <label for="a">a.	3</label><br>
+                      </div>
+                      <div id='pilihanb5' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal5" value="b">
+                        <label for="b">a.	4</label><br>
+                      </div>
+                      <div class='benar' id='pilihanc5' style='display : flex; flex-wrap : wrap; background :rgba(0,0,0,0)'>
+                        <input type="radio" name="soal5" id='benar5' value="c">
+                        <label for="c">c.	5</label><br>
+                      </div>
+                      <div id='pilihand5' style='display : flex; flex-wrap : wrap; background : rgba(0,0,0,0)'>
+                        <input type="radio" name="soal5" value="d">
+                        <label for="d">d.	6</label><br> 
+                      </div>
+                      <div id='danger5' style='display : none; background : rgba(255,0,0,0.8); width : 100%; color : white; font-weight: bold; text-align : center;'><span>Salah</span></div>
+                    </div>
+                    <!--  -------------------------------------------------------------------------------------------------------   -->
+
+                    <div id='skorBox' style='display : none; border-radius : 20px; background: linear-gradient(to right, #28636d, #65c7f7, #0052d4);  width : 80vw; height : 20vw; margin : auto;'>
+                      <p style='margin-top : 1vw; font-size : 6vw; color : white; text-align : center; font-weight: bold;'>
+                        SKOR
+                      </p>
+                      <p id='skor' style=' font-size : 6vw; color : white; text-align : center; font-weight: bold;'>
+                        
+                      </p>
+                     
+                    </div>
+
+                    <ion-col class="ion-margin-top" id='evalButton'> 
+                      <ion-button  (click)='reveal()' class='s2' color='warning' expand='block' style='height : 20vh; margin : auto; width : 60vw;'>
+                        <ion-label>
+                          <div style='margin : auto;  background : url(assets/img/key.svg); width : 20vw; height : 20vw; background-size : cover;'></div>
+                         
+                          <div style='margin-top : 2vw; color : black;' >Evaluasi</div>
+                        </ion-label>
+                      </ion-button>
+                    </ion-col>
+
+                    <div style='visibility : hidden'>
+                    <p><b>Kunci Jawaban : </b></p>
+                    <div id='reveal' style='display : none;'>
+                      <ol type='1'>
+                        <li>C</li>
+                        <li>B</li>
+                        <li>D</li>
+                        <li>C</li>
+                        <li>C</li>
+                      </ol>
+                    </div>
+                  </div>
+                    
+                  </ion-col>
+            </ion-row>
+            
+            
+          </ion-fab>
+        
+        </ion-content>
+         
+
+  
+  
+  
+</ion-content>
